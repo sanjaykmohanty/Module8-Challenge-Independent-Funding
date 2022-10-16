@@ -38,6 +38,15 @@
     WHERE CA.outcome = 'live' 
     ORDER BY "Remaining Goal Amount" DESC
 
-![image](https://user-images.githubusercontent.com/31812730/196052853-9a23667e-dacd-46d3-ba9f-b3c713bed921.png)
+![image](https://user-images.githubusercontent.com/31812730/196059737-79e18e23-d663-4e4a-8ffd-4ad6a20a6165.png)
 
-![image](https://user-images.githubusercontent.com/31812730/196056897-3d0c2630-acc3-497e-970e-b69648c8e685.png)
+    SELECT B.email, B.first_name, B.last_name, B.cf_id, C.company_name, C.description, C.end_date, (C.goal - C.pledged)         AS "Left of Goal"
+    INTO email_backers_remaining_goal_amount
+    FROM  backers B
+    JOIN campaign C
+    ON C.cf_id = B.cf_id
+    WHERE C.outcome = 'live'
+    ORDER BY B.email DESC
+    
+![image](https://user-images.githubusercontent.com/31812730/196059897-b626c96b-ec6c-49b1-9152-28f823915bd0.png)
+
