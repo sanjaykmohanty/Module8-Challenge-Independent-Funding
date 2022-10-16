@@ -40,7 +40,7 @@
 
 ![image](https://user-images.githubusercontent.com/31812730/196059737-79e18e23-d663-4e4a-8ffd-4ad6a20a6165.png)
 
-    SELECT B.email, B.first_name, B.last_name, B.cf_id, C.company_name, C.description, C.end_date, (C.goal - C.pledged)         AS "Left of Goal"
+    SELECT B.email, B.first_name, B.last_name, B.cf_id, C.company_name, C.description, C.end_date, (C.goal - C.pledged) AS "Left of Goal"
     INTO email_backers_remaining_goal_amount
     FROM  backers B
     JOIN campaign C
