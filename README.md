@@ -1,16 +1,24 @@
 # Module8-Challenge-Independent-Funding
-## Deliverable 1: Extract Data using Python dictionary methods
+
+## Overvirw
+This project is an extension of the crowdfunding ETL project. The purpose of this project is to perform an ETL process on the backers dataset and a data analysis by using SQL queries. Backer’s contact information is extracted and transformed from a CSV file and added as a new table to crowdfunding_db database. Finally, a data analysis is done on the crowdfunding_db database by using SQL queries.
+
+## Resources
+Software: Python 3.9.12, Jupyter Notebook 6.4.12, pgAdmin 4 6.12
+
+## Results
+### Extract Data using Python dictionary methods
 ![image](https://user-images.githubusercontent.com/31812730/196046594-f856a75f-af97-40c4-b691-397b2ca6295c.png)
 
 
-## Deliverable 2: Transform and Clean Data 
+### Transform and Clean Data 
 ![image](https://user-images.githubusercontent.com/31812730/196046331-f3a8be90-835e-4f92-ad6d-cbb5fae10d9c.png)
 
 
-## Deliverable 3: Create an ERD and a Table Schema and Load the Data
+### Create an ERD and a Table Schema and Load the Data
 ![image](https://user-images.githubusercontent.com/31812730/196045941-d6916745-7d1f-423d-9670-cad8533d3cae.png)
 
-## Deliverable 4: SQL Analysis
+### SQL Analysis 
 
     SELECT * FROM backers 
     LIMIT(10);
